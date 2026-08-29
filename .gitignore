@@ -1,15 +1,21 @@
-# to exclude Obsidian's settings (including plugin and hotkey configurations)
-.obsidian/
+# --- Obsidian: version settings + plugins (so other devices inherit the
+# --- vault's config: properties-hidden, Dataview, Breadcrumbs, graph
+# --- groups), but never per-device workspace caches.
+Jidousha/.obsidian/workspace.json
+Jidousha/.obsidian/workspace-mobile.json
+Jidousha/.obsidian/cache/
 
-# to only exclude plugin configuration. Might be useful to prevent some plugin from exposing sensitive data
-.obsidian/plugins
+# Obsidian's trash folder
+Jidousha/.trash/
 
-# OR only to exclude workspace cache
-.obsidian/workspace.json
+# fallback folder for files awaiting manual deletion
+_to_delete/
 
-# to exclude workspace cache specific to mobile devices
-.obsidian/workspace-mobile.json
-
-# Add below lines to exclude OS settings and caches
-.trash/
+# OS / editor junk
 .DS_Store
+.directory
+*~
+
+# tooling caches
+__pycache__/
+*.pyc
